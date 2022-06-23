@@ -29,6 +29,25 @@ ul{
     margin-top: 10px;
 }
 
+/* Burguer Menu */
+.menu-button{
+    color:white;
+    z-index:2;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* .menu-toggle{
+    display: none;
+} */
+
+.menu-toggle:checked +.container{
+    background-color: red;
+}
+
+
+
+
 
 /*Nav Bar*/
 
@@ -64,8 +83,8 @@ ul{
 
 .nav-main ul li{
     padding: 10px 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-main ul li a{
@@ -136,10 +155,45 @@ ul{
 }
 
 
+
+
 /* Media queries */
 
 
 @media (max-width: 800px){
+
+    .nav-main{
+        font-size: 15px;
+        display:flex;
+        justify-content:start;
+        align-items:center;
+        height: auto;
+        background-color: #333232;
+        border-radius: 5px;
+    }
+
+    /* Burguer Menu*/
+
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: #333232;
+        height: 100%;
+        opacity: 0.95;
+        padding:30px;
+        transform: translate(-5px);
+    }
+    
+
+
+
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 18px;
+    }
 
     .nav-logo{
         width: 80px;
@@ -148,16 +202,7 @@ ul{
         margin:auto;
     }    
 
-    .nav-main{
-        font-size: 15px;
-        display:flex;
-        justify-content:start;
-        align-items:flex-start;
-        flex-direction: column;
-        height: auto;
-        background-color: #333232;
-        border-radius: 5px;
-    }
+
 
     .nav-main ul li{
         padding: 10px 0;
@@ -174,6 +219,8 @@ ul{
     .nav-menu{
         margin-top: 15px;
     }
+
+
 
     .business-name{
         font-size: 20px;
