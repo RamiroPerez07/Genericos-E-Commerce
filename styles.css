@@ -112,6 +112,53 @@ ul{
     display: none;
 }
 
+/* search input */
+.nav-search{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.nav-search input{
+    height: 30px;
+    width: 250px;
+    background-color: #726f6f;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 300;
+}
+
+.nav-search input::placeholder{
+    color:#ccc;
+    font-weight: 300;
+}
+
+.nav-search input:focus{
+    outline:none;
+}
+
+.nav-search button{
+    margin-left: 1px;
+    height: 30px;
+    width:40px;
+    background-color: #5e5c5c;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.nav-search button:hover{
+    background-color: #a1a1a1;
+}
+
 
 
 
@@ -181,6 +228,10 @@ ul{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 20px 20px 20px;
+}
+
+.btn-container button{
+    margin: 0;
 }
 
 .btn-products-view{
@@ -299,13 +350,43 @@ ul{
 /* Media queries */
 
 
-@media (max-width: 800px){
+@media (max-width: 1025px){
+
+    .main-header{
+        flex-direction: column;
+    }
+
+    /* Search button */
+
+    .nav-main{
+        width: 100%;
+    }
+
+    .nav-search{
+        width: 100%;
+        object-fit: contain;
+        margin: 20px 0 0 0;
+    }
+
+    .nav-search input{
+        width:100%;
+    }
+
+    .nav-subcontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
 
     /* Burguer Menu*/
 
     .menu-burguer-btn{
         display: block;
+        margin: 20px 0 0 20px;
     }
 
     .nav-menu{
@@ -340,11 +421,14 @@ ul{
     
 
     .nav-logo{
-        width: 80px;
+        width: 100%;
+        max-width: 80px;
+        object-fit: contain;
         box-shadow: 0px 0px 1px 2px #ffffff;
         border-radius: 2px;
-        margin:auto;
     }    
+
+
 
 
     .business-name{
@@ -353,7 +437,7 @@ ul{
 
     .home{
         display: block;
-        margin:auto;
+        margin:0;
     }
 
     .institutional{
@@ -364,11 +448,7 @@ ul{
         padding: 0 20px 20px 20px;
     }
 
-    .btn-container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+
 
     .btn-contact-view{
         margin-top: 15px;
@@ -386,3 +466,75 @@ ul{
 
 }
 
+
+
+@media (max-width: 560px){
+    .btn-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn-contact-view{
+        margin-top:20px !important;
+    }
+
+}
+
+
+
+@media (max-width: 275px){
+
+    .nav-main ul li a{
+        font-size: 12px;
+    }
+
+    .main-info span{
+        font-size: 12px;    
+    }
+
+    .main-info h1{
+        font-size: 14px;
+    }
+
+    .mission-and-vision li{
+        font-size: 10px;
+    }
+
+
+
+    
+
+    .nav-subcontainer{
+        flex-direction: column;
+    }
+
+    .menu-burguer-btn{
+        margin-left: 0;
+    }
+
+    .main-header{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .home{
+        display: block;
+        margin-top:20px;
+    }
+
+    .nav-search{
+        margin-bottom: 20px;
+    }
+
+    .nav-search input{
+        font-size: 12px;
+    }
+
+
+
+    .contact-footer ul li{
+        font-size: 8px;
+    }
+
+}
