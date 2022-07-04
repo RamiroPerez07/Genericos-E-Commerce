@@ -239,7 +239,7 @@ ul{
 }
 
 .btn-products-view{
-    background-color: #333232;
+    background-color: #0d043a;
     color:#ffffff;
     padding: 8px;
     border-radius: 5px;
@@ -254,7 +254,7 @@ ul{
 }
 
 .btn-contact-view{
-    background-color: #333232;
+    background-color: #0d043a;
     color:#ffffff;
     padding: 8px;
     border-radius: 5px;
@@ -283,7 +283,7 @@ ul{
 .mission-and-vision-title{
     color: #ff7b00e1;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 24px;
     text-align: left;
     margin:20px;
 }
