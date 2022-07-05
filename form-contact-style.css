@@ -1,3 +1,5 @@
+/*Contenedor del formulario de contacto*/
+
 .contact-form-container{
     width:100%;
     height:auto;
@@ -9,7 +11,7 @@
     flex-direction: column;
 }
 
-
+/*Formulario de contacto*/
 .contact-form-container form{
     height: auto;
     width: 90%;
@@ -37,25 +39,26 @@
 }
 
 .location-map{
-    width: 100%;
+    width: 50%;
     margin: 0 20px 20px 20px;
     align-self: flex-start;
 }
 
 .form-inputs-container{
+    width:50%;
     margin-left: 20px;
     align-self: space-around;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: stretch;
+    align-items: stretch;
 }
 
 .form-inputs-container input,textarea{
     margin-bottom: 20px;
     outline: none;
     height: 30px;
-    width: 250px;
+    width: 70%;
     background-color: #ffffff;
     color: black;
     border-radius: 5px;
@@ -63,15 +66,13 @@
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     border-style: none;
-    border:#474747 solid 1px;
+    border:#a4a4a4 solid 1px;
 }
 
-.form-inputs-container textarea{
-    resize: none;
-}
+
 
 .form-inputs-container input::placeholder,textarea::placeholder{
-    color: black;
+    color: #414141;
     font-weight: 300;
 }
 
@@ -80,8 +81,11 @@
     box-shadow: 0px 0px 5px 1px #101010;
 }
 
+/* sobreescribimos las propiedades de la caja de comentarios */
 .form-inputs-container textarea{
-    width: 500px;
+    resize:none;
+    width: 100%;
+    min-width: 300px;
     height: 200px;
 }
 
