@@ -235,6 +235,8 @@ ul{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 20px 20px 20px;
+    padding-left:10%;
+    padding-right: 10%;
 }
 
 
@@ -372,7 +374,6 @@ ul{
 .form-inputs-container{
     width:50%;
     margin-left: 20px;
-    align-self: space-around;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -423,17 +424,18 @@ ul{
 /* sobreescribimos las propiedades de la caja de comentarios */
 .form-inputs-container textarea{
     resize:none;
-    width: 100%;
-    min-width: 300px;
+    width: auto;
     height: 200px;
 }
 
 .form-btn-container{
     margin-bottom: 20px;
-    width: 100%;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .form-btn-container button{
@@ -450,10 +452,6 @@ ul{
 .form-btn-container button:hover{
     opacity: 0.92;
     background-color: #723802e1;
-}
-
-.form-btn-container a{
-    margin-right: 30px;
 }
 
 
@@ -598,6 +596,12 @@ ul{
     /* photos container */
     .photos-container{
         flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .photos-container img{
+        max-width: none;
+        margin: 0 0 20px 0;
     }
 
 
@@ -607,28 +611,24 @@ ul{
 
     .input-map-container{
         flex-direction: column;
-        align-items: stretch !important;
+        align-items: stretch;
 
     }
 
     .form-inputs-container{
-        margin: 0 20px 20px 20px !important;
-        width:auto !important;
-    }
-
-    .form-inputs-container textarea{
-        min-width: 0 !important;
+        margin: 0 20px 20px 20px;
+        width:auto;
     }
 
     .location-map{
-        align-self: stretch !important;
+        align-self: stretch;
         margin-left: 20px;
         margin-right: 20px;
-        width: auto !important;
+        width: auto;
     }
 
     .form-btn-container{
-        margin-bottom: 0 !important;
+        margin-bottom: 0;
     }
 
 
@@ -665,6 +665,19 @@ ul{
     .nav-subcontainer{
         justify-content: space-around;
     }
+
+
+    /* Contact Buttons */
+
+    .form-btn-container{
+        flex-direction: column;
+    }
+
+    .form-btn-container a{
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+
 
 
 }
@@ -717,14 +730,6 @@ ul{
         font-size: 12px;
     }
 
-    /* Contact Buttons */
-    .form-btn-container{
-        flex-direction: column;
-    }
 
-    .form-btn-container a{
-        margin-right: 0 !important;
-        margin-bottom: 20px;
-    }
 
 }
