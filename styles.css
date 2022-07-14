@@ -477,8 +477,6 @@ ul{
     height: 12px;
 }
 
-.prod
-
 .product-table-selection-container::-webkit-scrollbar-track {
     background: var(--color3);
     border-radius: 10px;
@@ -528,6 +526,8 @@ ul{
     display: none;
 }
 
+/* End scroll bar */
+
 .product-table-selection-container table{
     width: 100%;
     background-color: var(--color4);
@@ -545,8 +545,27 @@ ul{
     height: 30px;
 }
 
+.product-table-selection-container table thead th{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .product-table-selection-container table tbody{
     cursor:pointer;
+}
+
+.product-table-selection-container table tbody tr:nth-child(even){
+    background-color: var(--color3);
+}
+
+.product-table-selection-container table tbody tr td{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.product-table-selection-container table tbody tr td:nth-child(2){
+    text-align: left;
 }
 
 
