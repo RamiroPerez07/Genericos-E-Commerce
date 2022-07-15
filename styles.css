@@ -960,7 +960,10 @@ ul{
     .check-toggle:checked ~ .nav-menu{
         left:0;
     }
-    
+
+    .disguise{
+        transform: translateX(-100%);
+    }
 
     .nav-logo{
         width: 100%;
